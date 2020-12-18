@@ -1,0 +1,46 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Calories{
+  public:
+  int Age = 0;
+  int Male = 0;
+  int Activity = 0;
+  Calories(int age, bool male, int activity){
+    this->Age = age;
+    this->Male = male;
+    this->Activity = activity;
+  }
+};
+
+Calories Tracker(0, false, 0);
+
+int main() {
+  string gender = "";
+  cout<<"Enter Your age:\n";
+  cin>>Tracker.Age;
+  cout<<"Are you Male or Female?\n";
+  cin>>gender;
+  if(gender == "male"||"Male"){
+    Tracker.Male = 2;
+  }
+  else if(gender == "female"||"Female"){
+    Tracker.Male = 1;
+  }
+  cout<<"Enter 1, 2, 3, based on how active you are,\n 3 being most active and 1 being least.\n";
+  cin>>Tracker.Activity;
+
+  int CaloriesTotal = Tracker.Age*0.2*Tracker.Male*Tracker.Activity*2;
+
+  cout<<CaloriesTotal;
+
+  cout<<Tracker.Age<<" "<<Tracker.Male<<" "<<Tracker.Activity<<endl;
+
+
+
+
+
+
+
+}
